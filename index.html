@@ -8,12 +8,20 @@
 		<link rel="stylesheet" type="text/css" href="css/styles.css">		
 	</head>
 	<body>
-		<div id='blocks-wrap'  class='blocks-wrap'>
-			<div id='1'></div>
-			<div id='2'></div>
-			<div id='3'></div>
-			<div id='4'></div>			
-		</div>	
-		<script src='js/blocks.js'></script>		
+		<div class="wrap">
+			<div id='blocks-wrap'  class='blocks-wrap'>
+				<div id='1' class="block" onClick="popup(this.id)">1</div>
+				<div id='2' class="block" onClick="popup(this.id)">2</div>
+				<div id='3' class="block" onClick="popup(this.id)">3</div>
+				<div id='4' class="block" onClick="popup(this.id)">4</div>			
+			</div>
+			<div>
+				<input type="checkbox" id="changecontent" onClick="change()">					
+			</div>
+			<button id="add" onClick="addBlock()">Add block</button>
+		</div>		
+		<div id="popup"></div>	
+		<script src='js/script.js'></script>		
 	</body>
 </html>
+
